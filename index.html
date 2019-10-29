@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>movie</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script type="text/javascript">
+  	(function(){
+			var html = document.documentElement;
+		    var w = html.clientWidth;
+				html.style.fontSize = 100 *(w/320) + "px";
+				window.onresize = ()=>{
+					//arguments.callee 是当前函数本身
+					//console.log(arguments.callee)
+					arguments.callee()
+				}
+		}())
+  </script>
+</html>
